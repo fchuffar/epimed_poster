@@ -195,16 +195,21 @@
 %==============================================================================
 \setbeamertemplate{headline}{
  \leavevmode
-  \begin{columns}
-   \begin{column}{\linewidth}
-    \vskip1cm
     \centering
     \usebeamercolor{title in headline}{\color{jblue}\Huge{\textbf{\inserttitle}}\\[0.5ex]}
+  \begin{columns}
+   \begin{column}{1cm}\end{column}
+   \begin{column}{.15\linewidth}
+     \mbox{\includegraphics[trim = 0mm 0mm 160mm 10mm, clip, width=0.99\linewidth]{figs/logo_iab.jpg}}
+   \end{column}
+   \begin{column}{.7\linewidth}
+    \centering
     \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
-    \vskip1cm
    \end{column}
-   \vspace{1cm}
+   \begin{column}{.15\linewidth}
+     \mbox{\includegraphics[trim = 150mm 208mm 10mm 31mm, clip, width=0.8\linewidth]{figs/logo_epimed.pdf}}
+   \end{column}
   \end{columns}
  \vspace{0.5in}
  \hspace{0.5in}\begin{beamercolorbox}[wd=47in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
