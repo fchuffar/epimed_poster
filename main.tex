@@ -26,6 +26,9 @@
 
 \usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
 
+\usepackage{xcolor}
+\definecolor{RoyalBlue}{rgb}{0,0.137,0.4}
+
 \usetheme{confposter} % Use the confposter theme supplied with this template
 
 \setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
@@ -63,11 +66,11 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{EpiMed Platform: Concept-driven analysis of omics data in translational research context} % Poster title
+\title{EpiMed Platform: Concept-driven omics analysis} % Poster title
 
-\author{Sophie Rousseaux, Anne-Laure Vitte, Florent Chuffart, Ekaterina Flin} % Author(s)
+\author{Florent Chuffart, Ekaterina Flin, Anne-Laure Vitte, Sophie Rousseaux} % Author(s)
 
-\institute{IAB (U1209/UMR5309)} % Institution(s)
+\institute{Institute for Advanced Biosciences (IAB), Université Grenoble Alpes} % Institution(s)
 
 %----------------------------------------------------------------------------------------
 
@@ -91,14 +94,12 @@
 %	OBJECTIVES
 %----------------------------------------------------------------------------------------
 
-\begin{alertblock}{Objectives}
-
-EpiMed: Medical Epigenetics and Bioinformatics
-
+\begin{alertblock}{EpiMed: Medical Epigenetics and Bioinformatics}
+Main objectives:
 \begin{itemize}
 \item Facilitate a translational research in epigenetics, between the fundamental research teams and the medical teams.
 \item Analyze large-scale whole-genome data that is essential to understand the epigenome.
-\item Organize an interactive database associating “omics” data with biological and clinical data.
+\item Organize an interactive database associating omics data with biological and clinical data.
 \end{itemize}
 
 \end{alertblock}
@@ -108,10 +109,9 @@ EpiMed: Medical Epigenetics and Bioinformatics
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Concept driven omics analysis}
+\begin{block}{Concept-driven omics}
 
-The main research activity of EpiMed is discovery of new biomarkers in cancers based on ectopic expression of tissue-specific genes [Rousseaux et al., Sci Transl Med, 2013.].
- % \cite{rousseaux:hal-01261754}.
+The main research activity of EpiMed aims to \textcolor{RoyalBlue}{\textbf{discover new biomarkers in cancers}} based on ectopic expression of tissue-specific genes. In the frame of scientific collaborations, EpiMed develops \textcolor{RoyalBlue}{\textbf{specific pipelines of data processing}} dedicated to each research project. Data analysis is driven by scientific questions and concepts.
 
 {
 \centering
@@ -119,22 +119,12 @@ The main research activity of EpiMed is discovery of new biomarkers in cancers b
 \mbox{\includegraphics[trim = 120mm 212mm 50mm 20mm, clip, width=.4\linewidth]{figs/fig02}}
 }
 
+\begin{center}
+\small{\textsl{Left panel: Aberrant activation of testis-specific(TS) and placenta-specific (PS) genes in tumoral lung. Righ panel: Ectopic activation of 26 TS/PS genes is associated with prognosis in lung cancer (Rousseaux et al., Sci Transl Med, 2013).}}
+\end{center}
 
-% II. Scientific collaborations
-
-We develop specific pipelines of data processing dedicated to each research project. Data analysis is driven by scientific questions and concepts.
-
-% Collaborative network:
-% \begin{itemize}
-% \item IAB, CHU, TIMC-IMAG, GIN, LJK,
-% \item International collaborations
-% \end{itemize}
-
-
-III. Expertise, Services and Tools 
-
+EpiMed \textcolor{RoyalBlue}{\textbf{provides expertise}} in bioinformatics, biostatistics, high performance computing, machine learning and develops \textcolor{RoyalBlue}{\textbf{tools for the community}}:
 \begin{itemize}
-\item Expertise in bioinformatics, biostatistics, HPC, machine learning
 \item EpiMed Database for clinical data and omics meta-data queries
 \item R package “epimedtools” for omics data processing and analysis
 \end{itemize}
@@ -143,76 +133,20 @@ III. Expertise, Services and Tools
 %----------------------------------------------------------------------------------------
 
 
+\begin{block}{EpiMed Database: Information system for data management}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{block}{EpiMed Database and Interfaces}
-
-EpiMed Database provide tools for “omics” meta-data management
+EpiMed Database provides several tools for clinical, biological and omics data management. The data can be accessed online through web interfaces or programmatically via REST API.
 
 {
 \centering
-\mbox{\includegraphics[trim = 0mm 0mm 0mm 30mm, clip, width=.6\linewidth]{figs/fig03}}
+\mbox{\includegraphics[trim = 0mm 0mm 0mm 30mm, clip, width=\linewidth]{figs/fig03}}
 
 }
 
-Tools are reachables using web interfaces and more...
-
-{
-\centering
-\mbox{\includegraphics[trim = 0mm 0mm 0mm 00mm, clip, width=.6\linewidth]{figs/fig03b}}
-
-}
 
 \end{block}
 
-
-
-
-
-
 \end{column} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 
@@ -221,15 +155,7 @@ Tools are reachables using web interfaces and more...
 
 
 
-
-
-
-
-
-
-
-
-\begin{block}{EpiMed Expertise}
+\begin{block}{Expertise in omics data analysis}
 
 
 EpiMed platform knits different kinds of collaborations
@@ -249,48 +175,25 @@ and deals with heterogenous data
 
 
 
-\begin{block}{Example of RNA-seq analysis on cell lines}
-{
-\centering
-\mbox{\includegraphics[trim = 0mm 0mm 0mm 43mm, clip, width=.66\linewidth]{figs/fig05}}
+\begin{block}{Recent projects and collaborations}
 
-}
-\end{block}
-
-
-
-
-
-
-
-
-
-
-
-\begin{block}{Proteomics-Transcriptomics interface}
+Proteomics-Transcriptomics interface
 
 Beijing – Shanghai - Grenoble, Lung Cancer Total Proteomic: 100 cancer + 100 non-tumoral
 
 {
 \centering
-\mbox{\includegraphics[trim = 0mm 0mm 0mm 63mm, clip, width=.66\linewidth]{figs/fig06}}
-
+\mbox{\includegraphics[trim = 0mm 0mm 0mm 63mm, clip, width=\linewidth]{figs/fig06}}
 }
-\end{block}
-
-
-
-
-
-\begin{block}{Eden cohort}
-{
 
 Collaboration with Johanna Lepeule
 
+{
 \centering
-\mbox{\includegraphics[trim = 0mm 0mm 0mm 43mm, clip, width=.66\linewidth]{figs/fig07}}
+\mbox{\includegraphics[trim = 0mm 0mm 0mm 43mm, clip, width=\linewidth]{figs/fig07}}
 
 }
+
 \end{block}
 
 
@@ -328,27 +231,28 @@ Collaboration with Johanna Lepeule
 % %----------------------------------------------------------------------------------------
 % %  CONTACT INFORMATION
 % %----------------------------------------------------------------------------------------
+
+ %\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+ %\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 %
-% \setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
-% \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+%\begin{alertblock}{Contact Information}
+%\begin{itemize}
+%\item Web: \href{http://epimed.univ-grenoble-alpes.fr/}{http://epimed.univ-grenoble-alpes.fr/}
+%\item Email: \href{mailto:iab-epimed@univ-grenoble-alpes.fr}{iab-epimed@univ-grenoble-alpes.fr}
+%\item Phone:  +33 (0)4 76 54 95 82
+%\end{itemize}
+%\begin{center}
+%\begin{tabular}{ccc}
+%% \includegraphics[width=0.4\linewidth]{logo.png} & \hfill & \includegraphics[width=0.4\linewidth]{logo.png}
+%\includegraphics[trim = 0mm 0mm 160mm 10mm, clip, width=0.25\linewidth]{figs/logo_iab.jpg} & \hfill & 
+%\includegraphics[trim = 150mm 200mm 10mm 32mm, clip, width=0.2\linewidth]{figs/logo_epimed.pdf}
+%\end{tabular}
+%\end{center}
 %
-% \begin{alertblock}{Contact Information}
-% \begin{itemize}
-% \item Web: \href{http://epimed.univ-grenoble-alpes.fr/database/}{http://epimed.univ-grenoble-alpes.fr/database/}
-% \item Email: \href{mailto:sophie.rousseaux@univ-grenoble-alpes.fr}{sophie.rousseaux@univ-grenoble-alpes.fr}
-% \item Phone:  +33 (0)4 76 54 95 82
-% \end{itemize}
-% \end{alertblock}
+%\end{alertblock}
 
 
 
-\begin{center}
-\begin{tabular}{ccc}
-% \includegraphics[width=0.4\linewidth]{logo.png} & \hfill & \includegraphics[width=0.4\linewidth]{logo.png}
-\includegraphics[trim = 0mm 0mm 160mm 10mm, clip, width=0.25\linewidth]{figs/logo_iab.jpg} & \hfill & 
-\includegraphics[trim = 150mm 200mm 10mm 32mm, clip, width=0.2\linewidth]{figs/logo_epimed.pdf}
-\end{tabular}
-\end{center}
 
 %----------------------------------------------------------------------------------------
 
